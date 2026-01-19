@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Notary In Bay | Anurag Jain & Pooja Agarwal</title>
+  <meta name="description" content="Notary In Bay – Mobile & in-office notary services in Pleasanton." />
+  <style>
+    :root{
+      --ink:#f0f6ff;
+      --muted:#d3e1ff;
+      --brand:#60a5fa;
+      --accent:#34d399;
+      --bg1:#163b70;  /* lighter navy */
+      --bg2:#1f4d8c;  /* lighter royal blue */
+      --card:#1b3f75;
+      --border:#2e5ca8;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+      background:linear-gradient(135deg,var(--bg1),var(--bg2));
+      color:var(--ink);
+    }
+    a{color:var(--brand);text-decoration:none}
+    header{
+      position:sticky;top:0;
+      background:linear-gradient(180deg,rgba(22,59,112,.9),rgba(22,59,112,.6));
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--border);
+    }
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    .topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 24px}
+    nav ul{list-style:none;display:flex;gap:18px}
+    nav a{color:#eef2ff;font-weight:600}
+    .pill{background:#2563eb;color:#e0e7ff;border-radius:999px;padding:6px 14px;font-weight:700}
+
+    .hero{padding:40px 24px 24px}
+    .title{font-size:2rem;margin-bottom:6px}
+    .subtitle{color:var(--muted)}
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:18px;
+      box-shadow:0 6px 24px rgba(0,0,0,.25);
+    }
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+    .col-6{grid-column:span 6}
+    .col-12{grid-column:span 12}
+    @media(max-width:860px){.col-6{grid-column:span 12}}
+    h2{margin-bottom:10px;color:#e8efff}
+    .list{display:grid;gap:10px}
+    .list li{list-style:none;color:#e3edff}
+
+    .btn{padding:10px 14px;border-radius:10px;font-weight:800;border:1px solid #3b82f6;cursor:pointer}
+    .btn.primary{background:var(--brand);color:#0b1e3b;border:none}
+    .btn.green{background:var(--accent);color:#0b1e3b;border:none}
+    .btn.outline{background:transparent;color:#eef5ff;border:1px solid #3b82f6}
+
+    .price{font-size:1.6rem;font-weight:900;color:#bfdbfe}
+
+    footer{margin-top:40px;padding:24px;text-align:center;color:#c7d2fe;border-top:1px solid var(--border)}
+    .map{width:100%;height:260px;border:0;border-radius:12px;margin-top:10px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar container">
+      <span class="pill">📜 Notary In Bay — Pleasanton, CA</span>
+      <nav>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero container">
+    <div class="card">
+      <h1 class="title">Notary In Bay — Professional Notary Services</h1>
+      <p class="subtitle">By Anurag Jain & Pooja Agarwal — Serving Pleasanton & East Bay</p>
+      <div style="margin-top:14px;display:flex;gap:12px;flex-wrap:wrap">
+        <a class="btn primary" href="tel:15105705635">📞 Call Anurag: 510‑570‑5635</a>
+        <a class="btn green" href="tel:15104494661">📞 Call Pooja: 510‑449‑4661</a>
+        <a class="btn outline" href="#contact">📅 Request Appointment</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="container">
+    <div class="grid">
+      <div class="col-6 card">
+        <h2>Notary Services Offered</h2>
+        <ul class="list">
+          <li>✔ Loan Signing (Refinance, Purchase, HELOC, Reverse)</li>
+          <li>✔ Wills & Trust Documents</li>
+          <li>✔ Passport Renewal (DS‑3053)</li>
+          <li>✔ Power of Attorney</li>
+          <li>✔ Copy Certification by Document Custodian</li>
+          <li>✔ Acknowledgments & Jurats</li>
+        </ul>
+      </div>
+      <div class="col-6 card">
+        <h2>Office Location</h2>
+        <p>📍 <strong>1616 Orchard Way, Pleasanton, CA 94566</strong></p>
+        <iframe class="map" src="https://www.google.com/maps?q=1616%20Orchard%20Way%20Pleasanton%2094566&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="container">
+    <div class="card">
+      <h2>Pricing</h2>
+      <p class="price">From $5 per signature</p>
+      <p style="color:var(--muted)">Mobile fees, loan packets & after‑hours available.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="container">
+    <div class="grid">
+      <div class="col-6 card">
+        <h2>Contact Us</h2>
+        <p>📞 <strong>Anurag Jain:</strong> 510‑570‑5635</p>
+        <p>📞 <strong>Pooja Agarwal:</strong> 510‑449‑4661</p>
+        <p>📍 <strong>1616 Orchard Way, Pleasanton, CA 94566</strong></p>
+      </div>
+      <div class="col-6 card">
+        <h2>What to Bring</h2>
+        <ul class="list">
+          <li>🪪 Valid Government ID</li>
+          <li>🖊️ Unsigned Documents</li>
+          <li>👥 Witnesses if needed</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="yr"></span> Notary In Bay — Anurag Jain & Pooja Agarwal
+  </footer>
+
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
